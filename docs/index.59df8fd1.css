@@ -1,0 +1,2 @@
+:root{--padding:20px;--margin:20px;--radius:10px;--background:linear-gradient(90deg,#afafaf 0%,#e7e0df 52%,#e2dbd9 62%,#a4a4a4 92%);--items:#f5eddc}*{margin:0;padding:0}body{background:var(--background);width:100%;height:100%}#wrapper{justify-content:center;align-items:center;display:flex}#header{flex-direction:column;justify-content:center;align-items:center;display:flex}h1{margin-top:40px;font-size:60px}button{width:30px}
+/*# sourceMappingURL=index.59df8fd1.css.map */

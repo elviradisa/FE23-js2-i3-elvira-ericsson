@@ -1,0 +1,176 @@
+/* 
+Elvira Ericsson - FE23
+
+Dummy Website
+
+Inlämningsuppgift 3
+*/
+@font-face {
+    font-family: "Bungee";
+    src: url("../fonts/Bungee-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Dekko";
+    src: url("../fonts/Dekko-Regular.ttf");
+}
+
+:root {
+    --padding: 20px;
+    --margin: 20px;
+    --radius: 10px;
+    --background: rgb(197, 231, 242);
+    --items: rgba(255, 255, 255, 0.38);
+    --form: #f45d5d;
+    --header: rgb(255, 240, 217);
+    --title: rgb(37, 56, 37);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--header); 
+    padding: 50px;
+    font-family: "Bungee";
+}
+
+#movingTopText {
+    padding: 5px;
+    color: var(--header);
+    font-family: "Bungee";
+}
+
+h1 {
+    font-size: 60px;
+    color: var(--title);
+}
+
+#form {
+    background-color: var(--form);
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+#searchInput {
+    all: unset;
+    font: 16px system-ui;
+    color: white;
+    height: 100%;
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 25px;
+}
+
+#searchButton {
+  background: none;
+  border: none;
+  width: 50px;
+  font-size: 30px;
+  color: var(--header);
+}
+
+#searchButton:hover {
+    color: #ff9b9b;
+}
+
+#shoppingCart {
+    width: 100px;
+}
+
+#categoryContainer {
+    font-family: "Bungee";
+    background-color: var(--header);
+    color: var(--title);
+    padding-bottom: var(--padding);
+    display: flex;
+    justify-content: center;
+}
+
+.categoryDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 1.5vw;
+}
+
+.categoryHover:hover {
+    color: #97b38f;
+}
+
+.productCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: var(--background);
+    color: var(--title);
+    height: 100vhs;
+    background-attachment: fixed;
+}
+
+.product {
+    position: relative;
+    width: 300px;
+    height: 700px;
+    padding: var(--padding);
+    margin: var(--margin);
+    box-sizing: border-box;
+    line-height: 30px;
+    background-color: var(--items);
+    border-radius: var(--radius);
+}
+
+.pFont {
+    font-family: "Dekko";
+}
+
+.cartButton {
+    border: none;
+    background-color: var(--form);
+    border-radius: var(--radius);
+    color: var(--header);
+    padding: 5px;
+    position: absolute;
+    display: flex;
+    bottom: var(--padding);
+}
+
+.cartButton:hover {
+    background-color: #ff9b9b;
+}
+
+.product > img {
+    width: 250px;
+    border-radius: var(--radius);
+}
+
+.productTitle {
+    font-family: "Bungee";
+    margin: 20px 0 20px 0;
+}
+
+.lowstock {
+    color: var(--form);
+    font-weight: bold;
+}
